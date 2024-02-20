@@ -17,34 +17,30 @@ Brief description or tagline about your project.
 
 ## Getting Started
 
-Brief instructions on how to get a copy of the project up and running on your local machine.
+This Template Repository is to create a new project for any machine learning project. it provides the necessary structure for th entire project as well guidelines to set the documentation for the project
 
 ### Prerequisites
 
 List any software or dependencies that need to be installed before running the project.
+```
+flask 
+python3
+sphinx
+```
+
 
 ### Installation
 
-Step-by-step guide on how to install and set up the project.
+simply click the "use template" button and select "create new repository" at the top of the title of the repository. it will be green in colour
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/your-project.git
-```
+remember to run this command when you have created new repository using the template to setup the documentation 
 
-```bash
-# Change to project directory
-cd your-project
 ```
+sphinx-build -b html source build
+```
+this will update your documentation
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
-```
 
-```bash
-# Additional setup steps if any
-```
 
 ## Project Structure
 
