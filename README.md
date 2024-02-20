@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Brief description or tagline about your project.
+A comprehensive template for machine learning projects, providing a structured project layout and documentation guidelines.
 
 ## Table of Contents
 
@@ -17,41 +17,40 @@ Brief description or tagline about your project.
 
 ## Getting Started
 
-This Template Repository is to create a new project for any machine learning project. it provides the necessary structure for th entire project as well guidelines to set the documentation for the project
+This template helps you kickstart your machine learning project with a predefined structure and documentation guidelines.
 
 ### Prerequisites
 
-List any software or dependencies that need to be installed before running the project.
-```
-flask 
-python3
+Ensure you have the following dependencies installed:
+
+```bash
+flask>=2.0
+python>=3.7
 sphinx
 ```
 
-
 ### Installation
 
-simply click the "use template" button and select "create new repository" at the top of the title of the repository. it will be green in colour
+1. Click the "Use this template" button and select "Create new repository" at the top.
+2. Run the following command after creating a new repository using the template to update the documentation:
 
-remember to run this command when you have created new repository using the template to setup the documentation 
-
-```
+```bash
 sphinx-build -b html source build
 ```
-this will update your documentation
 
-
+This command updates the documentation. Create a file in the `source` folder with the extension ".rst" for additional documentation, and run the command to automatically generate the appropriate HTML files.
 
 ## Project Structure
 
-Explain the structure of your project and briefly describe the purpose of each major folder/file.
+The project follows the structure below:
 
 ```
 |-- your_project
 |   |-- .gitignore
 |   |-- README.md
 |   |-- app.py
-|   |-- docs
+|   |-- build
+|   |-- source
 |   |-- requirements.txt
 |   |-- machine_learning_module
 |   |   |-- __init__.py
@@ -63,18 +62,17 @@ Explain the structure of your project and briefly describe the purpose of each m
 |   |-- templates
 ```
 
+Key components:
+- `.gitignore`: Specify files and directories to be ignored by version control.
+- `app.py`: Main application file.
+- `machine_learning_module`: Folder for machine learning-related modules.
+- `static`: Static files such as scripts and styles.
+- `templates`: HTML templates.
+
 ## Usage
 
-Provide examples or instructions on how to use your project. Include any important details, configurations, or commands.
-
-## Contributing
-
-Explain how people can contribute to your project. Include guidelines for reporting issues, making enhancements, and submitting pull requests.
+Provide examples and instructions on how to use your project. Include important details, configurations, or commands.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Mention and thank any contributors, libraries, or resources that inspired or helped your project.
